@@ -1,0 +1,22 @@
+body {
+    background-color: aqua;
+}
+.container {
+    text-align: center;
+}
+
+input, button {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+button {
+    background-color: white;
+    cursor: pointer;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
