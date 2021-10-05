@@ -21,7 +21,7 @@ botao.addEventListener( 'click' , function(event){
 
     resultado_soma.innerHTML = `${Number(num1.value) + Number(num2.value)}`
     resultado_multiplicacao.innerHTML = `${num1.value * num2.value}`
-    resultado_divisao.innerHTML = `${num1.value / num2.value}`
+    resultado_divisao.innerHTML = `${(num1.value / num2.value).toFixed(2)}`
     resultado_resto.innerHTML = `${num1.value % num2.value}`
 
 })
