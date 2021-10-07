@@ -1,10 +1,32 @@
 body {
     margin: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #container {
-    width: 100%;
+    text-align: center;
+    width: 30%;
     display: flex;
     justify-content: center;
+    background-color: #BFBFBF;
+}
+
+fieldset {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+legend {
+    text-align: left;
+}
+
+label { 
+    font-size: 18px;
 }

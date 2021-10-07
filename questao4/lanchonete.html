@@ -10,14 +10,14 @@
 <body>
     <h1>Formulário</h1>
     <div id="container">
-        <form action="/umarotaqualquer" method="POST">
+        <form action="" method="POST">
             <h2 class="titulo-cadastro">Lanchonete do IFMA</h2>
-            <label for="nomecliente">Nome do cliente:</label>
-            <input type="text" id="nomecliente" required placeholder="Nome Completo...">
+            <label for="nomecliente">Nome do Cliente:</label>
+            <input type="text" id="nomecliente" required>
 
             <fieldset>
                 <legend>Bebidas:</legend>
-                <label for="suco"><input type="radio" name="bebida" value="suco" id="suco" checked> Suco</label>
+                <label for="suco"><input type="radio" name="bebida" value="suco" id="suco"> Suco</label>
                     
                 <label for="refrigerante"><input type="radio" name="bebida" value="refrigerante" id="refrigerante"> Refrigerante</label>
                     
@@ -26,17 +26,19 @@
 
             <fieldset>
                 <legend>Doces e Salgados:</legend>
-                <label for="bolo"><input type="checkbox" value="Bolo" id="bolo" checked> Bolo</label>
+                <label for="bolo"><input type="checkbox" value="bolo" name="comida" id="bolo"> Bolo</label>
                     
-                <label for="pastel"><input type="checkbox" value="pastel" id="pastel"> Pastel</label>
+                <label for="pastel"><input type="checkbox" value="pastel" name="comida" id="pastel"> Pastel</label>
                     
-                <label for="torta"><input type="checkbox" value="torta" id="torta"> Torta</label>
+                <label for="torta"><input type="checkbox" value="torta" name="comida" id="torta"> Torta</label>
             </fieldset>
 
-            <input type="submit" value="Calcular">
-            <input type="submit" value="Limpar">
+            <input type="submit" value="Calcular" id="calcular">
+            <input type="submit" value="Limpar" id="limpar">
             </form>
         </form>
     </div>
+    <p id="resultado"></p>
+    <script src="lanchonete.js"></script>
 </body>
 </html>
