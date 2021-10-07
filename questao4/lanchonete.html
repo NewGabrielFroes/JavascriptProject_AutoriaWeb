@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lachonete - IFMA</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <div id="container">
+        <form action="/umarotaqualquer" method="POST">
+            <h2 class="titulo-cadastro">Lanchonete do IFMA</h2>
+            <label for="nomecliente">Nome do cliente:</label>
+            <input type="text" id="nomecliente" required placeholder="Nome Completo...">
+
+            <fieldset>
+                <legend>Bebidas:</legend>
+                <label for="suco"><input type="radio" name="bebida" value="suco" id="suco" checked> Suco</label>
+                    
+                <label for="refrigerante"><input type="radio" name="bebida" value="refrigerante" id="refrigerante"> Refrigerante</label>
+                    
+                <label for="agua"><input type="radio" name="bebida" value="agua" id="agua"> Água</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Doces e Salgados:</legend>
+                <label for="bolo"><input type="checkbox" value="Bolo" id="bolo" checked> Bolo</label>
+                    
+                <label for="pastel"><input type="checkbox" value="pastel" id="pastel"> Pastel</label>
+                    
+                <label for="torta"><input type="checkbox" value="torta" id="torta"> Torta</label>
+            </fieldset>
+
+            <input type="submit" value="Calcular">
+            <input type="submit" value="Limpar">
+            </form>
+        </form>
+    </div>
+</body>
+</html>
